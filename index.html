@@ -1,1 +1,99 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Work in Progress</title></head><body style="font-family:system-ui;display:grid;place-items:center;min-height:100vh;margin:0"><h1>faceverse.de</h1></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faceverse | Digitale Avatare im Metaverse</title>
+  <meta name="description" content="Entdecke das Faceverse: Erfahre, wie digitale Avatare für das Metaverse entstehen, welche Rolle Datenschutz spielt, und generiere dein eigenes, einzigartiges SVG-Avatar.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://faceverse.de/">
+  <meta property="og:title" content="Faceverse | Digitale Avatare im Metaverse">
+  <meta property="og:description" content="Entdecke das Faceverse: Erfahre, wie digitale Avatare für das Metaverse entstehen, welche Rolle Datenschutz spielt, und generiere dein eigenes, einzigartiges SVG-Avatar.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Faceverse</a></h1>
+      <nav aria-label="Hauptnavigation">
+        <a href="#generator">Generator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Dein Gesicht im Metaverse</h2>
+        <p class="hero-subtitle">Erfahre mehr über digitale Identitäten, Datenschutz und erstelle dein einzigartiges, geometrisches Avatar direkt im Browser – ohne Datenübertragung.</p>
+        <a href="#generator" class="btn btn-primary">Avatar erstellen</a>
+      </div>
+    </section>
+
+    <section id="generator" class="section container">
+      <div class="glass-card text-center">
+        <h2>Avatar Generator</h2>
+        <p>Tippe einen Namen, ein Pseudonym oder ein beliebiges Wort in das Eingabefeld ein. Unser eigens entwickelter, deterministischer Hash-Algorithmus generiert aus deiner Eingabe sofort ein vollkommen einzigartiges, geometrisches SVG-Avatar. Das Besondere daran: Alles passiert ausnahmslos lokal in deinem eigenen Browser. Keine deiner Eingaben und keine generierten Bilder werden jemals an einen Server gesendet, dort verarbeitet oder gespeichert. Die Generierung erfolgt in Echtzeit und bietet dir eine absolut private Möglichkeit, ein Profilbild zu erstellen.</p>
+
+        <div class="input-group">
+          <label for="name-input" class="visually-hidden">Dein Name für das Avatar</label>
+          <input type="text" id="name-input" placeholder="Gib deinen Namen ein..." autocomplete="off">
+          <button id="download-btn" class="btn btn-primary">Als SVG herunterladen</button>
+        </div>
+
+        <div id="avatar-container" aria-label="Dein generiertes Avatar">
+          <!-- SVG is injected here via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="grid-2">
+        <div class="glass-card">
+          <h2>Wie entstehen Avatare im Web3?</h2>
+          <p>Das Metaverse und Web3 versprechen eine nahtlose, grenzenlose Verbindung zwischen der physischen Realität und der digitalen Welt. Im absoluten Zentrum dieser utopischen Vision steht das Avatar – die visuelle und interaktive Repräsentation unserer selbst in einem endlosen virtuellen Raum. Doch wie werden diese Avatare eigentlich erschaffen?</p>
+          <p>Die Erstellung von digitalen Identitäten und Avataren reicht heutzutage von simplen, ikonografischen 2D-Grafiken und abstrakten geometrischen Mustern bis hin zu unfassbar detaillierten, fotorealistischen 3D-Modellen. Diese High-End-Avatare werden oft mittels modernster künstlicher Intelligenz, komplexen neuronalen Netzen und aufwendiger Photogrammmetrie aus Hunderten von Bildern echter Gesichter rekonstruiert. Das Ziel ist es, jede Pore, jede Mimik und jede noch so kleine Nuance der menschlichen Gestik in die virtuelle Welt zu übertragen.</p>
+          <p>Während diese hyperrealistischen und fotorealistischen Ansätze zweifellos ein Höchstmaß an visueller Immersion und emotionaler Bindung bieten, werfen sie gleichzeitig gravierende und tiefgreifende ethische und rechtliche Fragen auf: Wem gehört eigentlich das digitale Abbild, sobald es einmal erstellt wurde? Wie können Nutzer sicherstellen, dass ihre Gesichtsdaten nicht für schädliche Zwecke, wie beispielsweise die Erstellung von täuschend echten Deepfakes, missbraucht werden? Die technologische Machbarkeit eilt der regulatorischen Kontrolle oft meilenweit voraus.</p>
+          <p>In diesem Spannungsfeld bieten abstrakte, generative und geometrische Avatare – genau wie diejenigen, die in unserem Faceverse-Generator erstellt werden – eine charmante, sichere und äußerst kreative Alternative. Sie versuchen nicht, die Realität perfekt zu kopieren, sondern fassen die Essenz einer digitalen Identität in einem Spiel aus leuchtenden Farben, harmonischen Formen und mathematischer Präzision zusammen. Und das Wichtigste: Sie erfordern keinerlei persönliche, biometrische Daten. So entsteht eine sichere, pseudonyme und dennoch ausdrucksstarke Präsenz, die den Wunsch nach individueller Kreativität mit dem absoluten Bedürfnis nach unantastbarer Privatsphäre vereint.</p>
+        </div>
+        <div class="glass-card">
+          <h2>Datenschutz und der Wert von Gesichtsdaten</h2>
+          <p>Die massenhafte Verarbeitung von biometrischen Gesichtsdaten gehört zweifelsohne zu den sensibelsten, kritischsten und am stärksten diskutierten Bereichen der modernen Technologiebranche. Wenn multinationale Technologieunternehmen und Plattformen komplexe Gesichtserkennungsalgorithmen trainieren oder hochdetaillierte 3D-Scans der Nutzer für die Integration in das Metaverse verwenden, verarbeiten sie tiefgreifende biometrische Informationen. Diese Daten sind nach den strengen Richtlinien der europäischen Datenschutz-Grundverordnung (DSGVO) und vielen anderen internationalen Gesetzen als besonders schützenswert eingestuft.</p>
+          <p>Das grundlegende Problem bei biometrischen Daten lässt sich einfach zusammenfassen: Ein einmal kompromittiertes oder gestohlenes Passwort kann man in wenigen Minuten zurücksetzen und ändern. Ein kompromittiertes Gesicht, ein digitalisierter Fingerabdruck oder ein Irisscan hingegen können nicht einfach ausgetauscht werden. Der Verlust oder Diebstahl solcher Daten hat permanente und irreversible Konsequenzen für die betroffene Person.</p>
+          <p>Aus diesem Grund ist das Prinzip der Datensparsamkeit – also das Erheben von so wenig Daten wie nur irgend möglich – nicht nur ein nettes Konzept, sondern das absolute oberste Gebot bei der Entwicklung neuer Technologien. Moderne, verantwortungsbewusste Systeme sollten idealerweise strikten "Zero-Knowledge"-Prinzipien folgen. Das bedeutet, dass Berechnungen und Datenverarbeitungen direkt auf dem Endgerät des Nutzers (sogenanntes Edge Computing) durchgeführt werden sollten, anstatt sensible Rohdaten unverschlüsselt in die Cloud oder auf fremde Server zu senden.</p>
+          <p>Auf <strong>Faceverse.de</strong> setzen wir genau dieses Prinzip der Datensparsamkeit so radikal und kompromisslos wie möglich um. Unser Avatar-Generator nutzt eine verblüffend einfache, aber hocheffektive Hashing-Funktion, die ausschließlich direkt in deinem Webbrowser ausgeführt wird. Die Zeichenkette, die du in das Textfeld eingibst, wird zu 100% lokal in mathematische Parameter umgewandelt. Absolut nichts von dem, was du eingibst, verlässt jemals dein Gerät. Um dieses Versprechen der absoluten Privatsphäre zu unterstreichen, verzichtet diese Website vollständig auf den Einsatz von Cookies, bindet keine externen Analysetools wie Google Analytics ein und implementiert keinerlei Formen des Nutzertrackings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="glass-card">
+        <h2>Die Technologie hinter dem deterministischen Generator</h2>
+        <p>Der Faceverse-Generator ist nicht nur ein unterhaltsames Tool, sondern demonstriert auch eindrucksvoll, wie viel Funktionalität, Interaktivität und Design man mit reinen, modernen Frontend-Technologien (HTML, CSS, JavaScript) erreichen kann. Und das alles völlig ohne den Rückgriff auf ein komplexes, teures Backend, aufwendige Datenbanken oder externe Cloud-Abhängigkeiten. Das gesamte System ist extrem leichtgewichtig und basiert im Kern auf drei fundamentalen technischen Säulen:</p>
+        <ul>
+          <li><strong>Deterministisches Hashing (FNV-1a Algorithmus):</strong> Der vom Nutzer eingegebene Text wird durch einen unglaublich schnellen, nicht-kryptografischen Hash-Algorithmus geschickt. In unserem Fall verwenden wir eine Variante des Fowler-Noll-Vo (FNV) Hashs. "Deterministisch" bedeutet in diesem Zusammenhang, dass ein und dieselbe Eingabe (zum Beispiel der Name "Alice") <em>immer und unter allen Umständen</em> exakt denselben numerischen Zahlencode als Ergebnis liefert. Gleichzeitig führt selbst die allerkleinste Änderung, wie etwa die Änderung der Groß- und Kleinschreibung (zum Beispiel "alice"), aufgrund des Lawineneffekts zu einem völlig anderen, unvorhersehbaren Hash-Ergebnis.</li>
+          <li><strong>Pseudo-Zufallszahlengenerator (PRNG):</strong> Der generierte Hash-Wert dient anschließend als sogenannter "Seed" (zu Deutsch: Startwert oder Keim) für einen maßgeschneiderten mathematischen Zufallszahlengenerator. Würden wir die Standardfunktion des Browsers für echten Zufall (`Math.random()`) verwenden, würde sich das Avatar bei jedem kleinsten Neuladen der Seite komplett verändern. Der Seed garantiert jedoch, dass die generierte Sequenz der "zufälligen" Zahlen – welche letztendlich über die Auswahl der Farben, die geometrischen Formen und deren genaue Positionierung auf der Leinwand entscheiden – für einen bestimmten Namen immer konstant bleibt.</li>
+          <li><strong>Skalierbare Vektorgrafiken (Scalable Vector Graphics - SVG):</strong> Das eigentliche visuelle Endprodukt, das Avatar, wird als nativer SVG-Code dynamisch direkt im Document Object Model (DOM) des Browsers zusammengebaut. SVGs bringen für diesen Anwendungsfall einen enormen, entscheidenden Vorteil mit sich: Da sie nicht wie JPGs oder PNGs aus Tausenden von einzelnen Pixeln bestehen, sondern aus reinem, menschenlesbarem Text (XML), der mathematische Formen und Pfade beschreibt, sind sie verlustfrei und unendlich skalierbar. Egal, ob du das Avatar auf einem winzigen Smartphone-Bildschirm oder auf einer riesigen 4K-Plakatwand betrachtest – es bleibt immer gestochen scharf. Zudem ist die resultierende Dateigröße im Vergleich zu Rastergrafiken verschwindend gering.</li>
+        </ul>
+        <p>Das finale Resultat dieser Kombination ist eine herrlich spielerische, kryptografisch sichere und extrem ressourcenschonende Methode, um einzigartige digitale Identitäten zu erschaffen. Dieser Ansatz fügt sich perfekt in die dezentralen, nutzerzentrierten Prinzipien des Web3 und des sich entwickelnden Metaverses ein, wo Datensouveränität und Unabhängigkeit von zentralen Servern eine immer wichtigere Rolle spielen.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Faceverse.de. Ein unabhängiges Showcase für digitale Identitäten und Datenschutz.</p>
+      <nav aria-label="Fußzeile">
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
